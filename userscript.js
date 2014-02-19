@@ -1,3 +1,8 @@
+// COPY AND PASTE THIS
+// SCRIPT INTO THE CONSOLE
+// ON THE CLOSE VOTES
+// REVIEW PAGE
+
 var keymap = {}
 $(window).on('keydown', function(e) {
     e.preventDefault()
@@ -6,6 +11,7 @@ $(window).on('keydown', function(e) {
 var shortcutKeys = 'ASDFGHJKL'
 
 $(window).on('popstate', resetToStart)
+resetToStart()
 
 function resetToStart() {
     var i = 0
