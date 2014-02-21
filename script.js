@@ -1,7 +1,8 @@
-// COPY AND PASTE THIS
-// SCRIPT INTO THE CONSOLE
-// ON THE CLOSE VOTES
-// REVIEW PAGE
+// *----------------------------* //
+// | COPY AND PASTE THIS SCRIPT | //
+// | INTO THE CONSOLE ON THE    | //
+// | REVIEW PAGE!!!             | //
+// *----------------------------* //
 
 var keymap = {}
 $(window).on('keydown', function(e) {
@@ -62,7 +63,6 @@ function resetToStart() {
     }, function() {
         $('.review-actions input').each(function() { getEachFunc($(this), $(this), i++, specialCases)() })
     })
-    $(window).on('popstate', resetToStart)
 }
 
 function getEachFunc(lbl, btn, i, specialCases) {
